@@ -1,10 +1,9 @@
-n, m = map(int, input().split())
-data = [0] * n
+N,M = map(int,input().split())
+result =[0]*N
 
-for _ in range(m) :
-  i, j, k = map(int, input().split())
-  for i in range(i, j + 1) :
-    data[i-1] = k
-
-for i in range(n) :
-  print(data[i], end=' ')
+for _ in range(M):
+    i,j,k = map(int,input().split())
+    for i in range(i,j+1):
+        result[i-1] = k
+for i in range(N):  
+    print (result[i],end=" ")
